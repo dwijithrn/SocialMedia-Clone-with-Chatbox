@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encyclopedia</title>
+    <link rel="stylesheet" href="./styl.css" />
+  </head>
+
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="#" class="logo">Encyclopedia</a>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#contents">Contents</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+      </header>
+  
+      <section>
+          <img src="./images/trees.png" id="trees" alt="trees" />
+          <img src="./images/trees2.png" id="trees2" alt="trees2" />
+          <img src="./images/birds.png" id="birds" />
+          <img src="./images/sun.png" id="sun" />
+          <img src="./images/sunlight.png" id="sunlight" />
+          <img src="./images/mists.png" id="mist" />
+          <img src="./images/mountain1.png" id="mountain1" />
+          <img src="./images/mountain2.png" id="mountain2" />
+          <img src="./images/mountain3.png" id="mountain3" />
+          <img src="./images/mountain4.png" id="mountain4" />
+          <img src="./images/mountain5.png" id="mountain5" />
+  
+          <a href="#sec1" id="btn">Explore</a>
+          
+        </section>
+    </div>
+
+    <div id="sec1" style="background-color: #061707; color: white; text-align: center; font-size: 1.25rem;">
+      <br><br><br><br><br>
+      <h1 style="letter-spacing: 2.5px;">Discover the answers to your questions such as:</h1>
+      <br><br><br>
+      <ul style="text-align: left; margin-left: 39%; font-size: 18pt;">
+        <li> How did the Earth begin?</li>
+        <li> Which is the biggest whale?</li>
+        <li> What is the tundra like?</li>
+      </ul>
+      <br><br>
+    . . . and many, many more.
+    </div>
+
+    <div id="contents" style="color: white; text-align: center; background-color: #061707;">
+      <br><br><br><br><br>
+      <h1 style="font-size: 10rem;">CONTENTS</h1>
+    </div>
+      <section class="sec" id="sec">
+        <a href="flora.html">
+        <div class="card">
+            <div class="card-img img-1"></div>
+            <div class="card-body">
+                <span class="bg"></span>
+                <span class="bg"></span>
+                <span class="bg"></span>
+                <div class="content">
+                    <h2 class="title">Flora</h2>
+                    <p class="para">Into the world of plants and trees and forests and the whole of the Flora world. Click here to dive in!</p>
+                </div>
+            </div>
+        </div>
+        </a>
+        <div style="visibility: hidden;">just filler text</div>
+        <a href="fauna.html">
+        <div class="card">
+            <div class="card-img img-2"></div>
+            <div class="card-body">
+                <span class="bg"></span>
+                <span class="bg"></span>
+                <span class="bg"></span>
+                <div class="content">
+                    
+                    <h2 class="title">Fauna</h2>
+                    <p class="para">It encompasses all the diverse species of animals, both vertebrates and invertebrates, that inhabit a particular environment or share common characteristics within a broader geographical area.</p>
+                </div>
+            </div>
+        </div>
+        </a>
+        <div style="visibility: hidden;"> just filler text</div>
+        <a href="space.html">
+        <div class="card">
+            <div class="card-img img-3"></div>
+            <div class="card-body">
+                <span class="bg"></span>
+                <span class="bg"></span>
+                <span class="bg"></span>
+                <div class="content">
+                    <h2 class="title">Space</h2>
+                    <p class="para">Exploring the vastness of the universe! Click here to be transported into the depths of the universe and into space</p>
+                </div>
+            </div>
+        </div>
+        </a>
+    </section>
+
+    
+    <div id="about" style="background-color: #061707; color: white; text-align: center;">
+      <br><br><br><br><h1 style="font-size: 4rem;">About</h1><br><br><br>
+      <p id="mem" style="font-size: 20px;">This Encyclopedia is packed with a ton <br><br>
+        of questions and answers about the world in which we live. <br><br>
+        It is full of fascinating facts and intriguing information.</p>
+      <br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+
+      
+      <hr>
+
+      <div class="team" id="team">
+        <br><br>
+        <p id="mem">Members</p>
+        <br>
+        Diya Nair - 1MV20CS032 <br><br>
+        Dwijith R Nambiar - 1MV20CS033 <br><br>
+        Keerthana S - 1MV20CS049 <br><br>
+        Mayur N Murthy - 1MV20CS059 <br><br><br><br>
+      </div>
+
+      <script>
+        let trees = document.getElementById("trees");
+        let trees2 = document.getElementById("trees2");
+        let birds = document.getElementById("birds");
+        let sun = document.getElementById("sun");
+        let sunlight = document.getElementById("sunlight");
+        let mist = document.getElementById("mist");
+        let mountain1 = document.getElementById("mountain1");
+        let mountain2 = document.getElementById("mountain2");
+        let mountain3 = document.getElementById("mountain3");
+        let mountain4 = document.getElementById("mountain4");
+        let mountain5 = document.getElementById("mountain5");
+        let text = document.getElementById("text");
+        let btn = document.getElementById("btn");
+        let header = document.querySelector("header");
+  
+        window.addEventListener("scroll", function () {
+          let value = window.scrollY;
+          //let value = window.scrollY;
+  
+          trees.style.top = value * 0.05 + "px";
+          trees2.style.top = value * 0.15 + "px";
+          //trees2.style.left = value * 0.25 + "px";
+          sun.style.top = value * 1.05 + "px";
+          sunlight.style.top = value * 0.25 + "px";
+          mist.style.top = value * 0.25 + "px";
+          mist.style.left = -value * 0.5 + "px";
+          birds.style.top = value * 0.25 + "px";
+         
+  
+          mountain1.style.top = value * 0.05 + "px";
+          mountain2.style.left = -value * 0.25 + "px";
+          mountain3.style.top = -value * 0.05 + "px";
+          mountain3.style.left = -value * 0.3 + "px";
+          mountain4.style.top = -value * 0.05 + "px";
+          mountain5.style.top = value * 0.5 + "px";
+  
+          text.style.marginRight = value * 4 + "px";
+          text.style.marginTop = value * 1.5 + "px";
+          btn.style.marginTop = value * 0.25 + "px";
+  
+          header.style.top = value * 0.5 + "px";
+        });
+      </script>
+    </body>
+  </html>

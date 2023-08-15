@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+  min-height: 100vh;
+  background: linear-gradient(#aeaeae,#aeaeae);
+  overflow-x: hidden;
+  
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+}
+header .logo
+{
+    color:#fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-Left: 20px;  
+} 
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color:#fff;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a:active{
+    background: #fff;
+    color: #2b1055;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    position: relative;
+    margin: 20px;
+    display:inline-block;
+}
+#div1{
+    float: left;
+    transform: translateX(150px);
+}
+#div2{
+    float: right;
+    transform: translateX(600px);
+}
+#sec1{
+    background: linear-gradient(#00481f,#00d0ff);
+    padding: 0px;
+}
+#sec2{
+    background:linear-gradient(#00d0ff,#e8ebf0) ;
+}
+#sec3{
+    background:linear-gradient(#e8ebf0,#aeaeae ) ;
+}
+h2{
+    font-size: 20pt;
+    color: #fff;
+    letter-spacing:.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    font-size: 15pt;
+    color: azure;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#head1{
+    transform: translateY(350px) translateX(-150px);
+}
+#ele1{
+    transform: translateY(350px) translateX(-150px);
+    width: 400px;
+}
+#ele2{
+    transform: translateY(150px) translateX(-50px);
+    width: 500px;
+}
+#head2{
+    transform: translateX(300px) translateY(100px) ;
+    color: #666666;
+}
+#wh1
+{
+    width: 600px;
+    transform: translateX(-600px) translateY(200px); 
+    color: #666666;   
+}
+#wh2{
+    width: 900px;
+    transform: translateX(-600px) translateY(100px);   
+    color: #666666;
+}
+#head3{
+    transform: translateX(800px) translateY(250px) ;
+    color: #000000;
+}
+#pen1
+{
+    width: 800px;
+    transform: translateX(600px) translateY(300px); 
+    color: #000000;   
+}
